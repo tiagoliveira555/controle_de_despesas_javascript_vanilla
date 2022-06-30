@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.saldo_atual_container h3 {
+    font-size: 1rem;
+}
+
+.saldo_atual_container p {
+    font-size: 1.5rem;
+    color: #1650bb;
+}
+
+.receitas_despesas {
+    box-shadow: 0 0 3px #00000056;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    cursor: default;
+}
+
+.receitas_despesas h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.borda {
+    height: 100%;
+    border: 1px solid #6666662a;
+}
+
+.receitas_container,
+.despesas_container {
+    font-size: 1.2rem;
+}
+
+.receitas_container {
+    color: #40bd34;
+}
+
+.despesas_container {
+    color: #b31f1f;
+}
+
+.transacoes_container h3,
+.form_container h3 {
+    font-size: 1rem;
+    border-bottom: 1px solid #5555555d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.transacoes li {
+    position: relative;
+    background-color: #fff;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    box-shadow: 0 0 3px #00000056;
+    margin: 10px 0;
+    color: #444;
+    font-size: .9rem;
+    border-radius: 3px;
+    cursor: default;
+}
+
+.positivo {
+    border-right: 5px solid #40bd34;
+}
+
+.negativo {
+    border-right: 5px solid #b31f1f;
+}
+
+.apagar {
+    position: absolute;
+    left: -15px;
+    background-color: #be0606;
+    width: 12px;
+    height: 18px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    transition: .1s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.apagar:hover {
+    opacity: 1;
+}
+
+.form_container {
+    margin-top: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs span {
+    font-size: .7rem;
+}
+
+.inputs input {
+    margin-bottom: 10px;
+    padding: 4px;
+    outline: none;
+}
+
+.form_container button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5f8cdf;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    outline: none;
+}
+
+.form_container button:hover {
+    opacity: .9;
+}
+ 

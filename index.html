@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Controle de despesas</h2>
+      <div class="saldo_atual_container">
+        <h3>Saldo Atual</h3>
+        <p>R$ <span class="saldo_atual"></span></p>
+      </div>
+      <div class="receitas_despesas">
+        <div>
+          <h3>Receitas</h3>
+          <p class="receitas_container">R$ <span class="receitas"></span></p>
+        </div>
+        <div class="borda"></div>
+        <div>
+          <h3>Despesas</h3>
+          <p class="despesas_container">R$ <span class="despesas"></span></p>
+        </div>
+      </div>
+      <div class="transacoes_container">
+        <h3>Transações</h3>
+        <ul class="transacoes"></ul>
+      </div>
+      <div class="form_container">
+        <h3>Adicionar transações</h3>
+        <form>
+          <div class="inputs">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Nome da transação"
+            />
+          </div>
+          <div class="inputs">
+            <label for="valor">Valor</label>
+            <span>(negativo - despesas, positivo - receitas)</span>
+            <input
+              type="number"
+              name="valor"
+              id="valor"
+              placeholder="Valor da transação"
+            />
+          </div>
+          <button type="submit" id="btn_submit">Adicionar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
